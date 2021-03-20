@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    logservice:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: logservice
+        ports:
+            - "5000:6000"
+    storeservice:
+        build:
+            context: .
+            dockerfile: Dockerfile copy
+        container_name: storeservice
+        ports:
+            - "5001:6000"

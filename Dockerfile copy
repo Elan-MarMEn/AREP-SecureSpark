@@ -1,0 +1,12 @@
+FROM openjdk:8
+
+WORKDIR /storeService/bin
+
+ENV PORT 6000
+
+COPY /target/classes /storeService/bin/classes
+COPY /target/dependency /storeService/bin/dependency
+RUN mkdir keyscertsStore
+COPY keyscertsStore /storeService/bin/keyscertsStore
+
+CMD ["java","-cp","./classes:./dependency/*","edu.escuelaing.arep.secure.app.StoreService.StoreserviceApp"]

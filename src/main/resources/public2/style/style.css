@@ -1,0 +1,59 @@
+
+.main-Container{
+    display: grid;
+    grid-template-rows: 10% 90%;
+    /* background-color: aqua; */
+    height: 800px;
+}
+
+.header{
+    background-color: goldenrod;
+    text-align: center;
+}
+
+.main-subContainer{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+}
+
+.main-subContainer button:hover{
+    cursor: pointer;
+}
+
+.subContainer_Input{
+    /* background-color: antiquewhite; */
+    width: 30%;
+    height: 30%;
+    margin: auto 0% auto auto;
+}
+.subContainer_Input input{
+    font-size: larger;
+    margin-top: 5%;
+}
+
+.subContainer_Input label{
+    font-size: larger;
+    margin-left: 5%;
+}
+.subContainer_Input button{
+    font-size: x-large;
+    margin: 5%;
+    padding: 1% 4% 1% 4%;
+    color: white;
+    background-color: rgb(48, 48, 48);
+}
+
+.subContainer_Button{
+    background-color:rgba(177, 177, 177, 0.644);
+    margin: auto auto auto 0%;
+    width: 30%;
+    border-left: 3px solid black;
+    min-height: 30%;
+    max-height: auto;
+}
+
+.subContainer_Button button{
+    font-size: x-large;
+    margin: 5%;
+}
